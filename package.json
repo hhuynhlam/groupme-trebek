@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "director": "^1.2.8",
+    "redis": "^2.6.3",
     "sync-request": "^3.0.1"
   },
   "devDependencies": {

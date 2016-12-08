@@ -1,3 +1,4 @@
+const answer = require('./lib/answer');
 const question = require('./lib/question');
 const sendMessage = require('./lib/sendMessage');
 
@@ -8,6 +9,8 @@ function respond() {
 
   if (/^\/trebek tell.*$/.test(input)) {
     sendMessage(input);
+  } else if (/^\/trebek answer.*$/.test(input)) {
+    answer(input);
   } else if (/^\/trebek question.*$/.test(input)) {
     question(input);
   } else {

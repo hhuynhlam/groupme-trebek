@@ -4,7 +4,7 @@ const bot = require('./bot.js');
 
 function ping() {
   this.res.writeHead(200);
-  this.res.end("Hey, I'm Cool Guy.");
+  this.res.end('Trebek Health: OK');
 }
 
 const router = new director.http.Router({
